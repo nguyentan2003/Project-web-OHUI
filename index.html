@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/reponsive.css" />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Dự Án Web Mỹ Phẩm</title>
+    </head>
+    <body>
+        <!-- ============ header ============== -->
+        <header class="header">
+            <div class="content">
+                <!-- info -->
+                <div class="header__info hiden-tablet-mobile">
+                    <span class="header__contact"
+                        >Mai Phương Ohui Whoo Sum37 Chính Hãng -
+                        0961.394.394</span
+                    >
+                    <div class="header__home-page">
+                        <a href="#!">Trang Chủ</a>
+                        <a href="#!">Tin Tức</a>
+                    </div>
+                </div>
+
+                <!-- header main -->
+                <div class="header__main">
+                    <label for="close" class="header__bars center">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <img
+                        src="./assets/img/logo.png"
+                        alt="ohui"
+                        class="header__logo"
+                    />
+                    <div class="header__btn">
+                        <div class="header__find center hiden-tablet-mobile">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div
+                                class="header__btn-container-find hiden-tablet-mobile center"
+                            >
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Tìm sản phẩm yêu thích của bạn..."
+                                />
+                            </div>
+                            <i
+                                class="fa-solid fa-magnifying-glass input-find"
+                            ></i>
+                        </div>
+
+                        <div class="header__cart center">
+                            <div
+                                class="hiden-tablet-mobile header__cart-container"
+                            >
+                                Chưa có giù trong giỏ hàng
+                            </div>
+                            <span class="hiden-mobile">0đ</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- header-navbar -->
+                <div class="header__navbar hiden-tablet-mobile">
+                    <ul class="header__nav center">
+                        <li class="nav-item active present">
+                            <a href="#!">MAI PHƯƠNG OHUI</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Nước Hoa Hồng</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Serum</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Tính chất</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Kem dưỡng da</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Kem dưỡng vùng mắt</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Kem trị thâm mắt</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Mặt nạ</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Chống nắng</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#!">OHUI</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Dưỡng Trắng Da</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Trị Mụn</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Dưỡng Ẩm </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Xanh Prim Advancer</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Dưỡng Body </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui For Men</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Son</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Ohui Trang Điểm</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#!">WHOO</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Trắng Da Trị Nám</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Vàng Chống Lão Hoá</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Tái Sinh Da</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Chống Nắng</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Dưỡng Ẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Bichup</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo Spa</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Whoo For Men</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#!">SU:M37°</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Dưỡng Trắng Da</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Tái Tạo Năng Lượng</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Chống Lão Hoá</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Trang Điểm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 For Men</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Làm Sạch</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Đỏ</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Su:m37 Son</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#!">SULWHASOO</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Trang Điểm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Chăm Sóc Da</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Làm Đẹp</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Chống Lão Hoá</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Dưỡng Ẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Chống Nắng</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo Spa</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sulwhaoo For Men</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#!">BỘ MỸ PHẨM</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ </a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Ohui</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Ohui mini</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Whoo</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Whoo mini</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Su:m37</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Su:m37 mini</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Bộ Sulwhasoo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#!">GÓI SAMPLE</a>
+                            <ul class="nav-item-select transition-on-of">
+                                <li>
+                                    <a href="#!">Sản Phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Gói Sale Ohui</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Gói Sale Whoo</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Gói Sale Su:m37</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!">HỒNG SÂM HÀN QUỐC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!">THỰC PHẨM CHỨC NĂNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!">HERBALIFE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- màn phủ  -->
+
+            <!-- fixed -->
+            <input type="checkbox" name="" id="close" hidden />
+            <div class="header__fixed">
+                <div class="header__fixed-input center">
+                    <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Tìm sản phẩm yêu thích của bạn..."
+                    />
+                    <div class="header__fixed-find">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <ul class="header__navbar-left">
+                    <li>
+                        <input type="checkbox" name="" id="rotate1" hidden />
+                        <a href="#!">MAI PHƯƠNG OHUI </a>
+                        <label for="rotate1" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 16"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Nước Hoa Hồng</a>
+                            </li>
+                            <li>
+                                <a href="#!">Serum</a>
+                            </li>
+                            <li>
+                                <a href="#!">Tính chất</a>
+                            </li>
+                            <li>
+                                <a href="#!">Kem dưỡng da</a>
+                            </li>
+                            <li>
+                                <a href="#!">Kem dưỡng vùng mắt</a>
+                            </li>
+                            <li>
+                                <a href="#!">Kem trị thâm mắt</a>
+                            </li>
+                            <li>
+                                <a href="#!">Mặt nạ</a>
+                            </li>
+                            <li>
+                                <a href="#!">Chống nắng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="rotate2" hidden />
+                        <a href="#!">OHUI </a>
+                        <label for="rotate2" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 15"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Dưỡng Trắng Da</a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Trị Mụn</a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Dưỡng Ẩm </a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Xanh Prim Advancer</a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Dưỡng Body </a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui For Men</a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Son</a>
+                            </li>
+                            <li>
+                                <a href="#!">Ohui Trang Điểm</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="rotate3" hidden />
+                        <a href="#!">WHOO</a>
+                        <label for="rotate3" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 14"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Trắng Da Trị Nám</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Vàng Chống Lão Hoá</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Tái Sinh Da</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Chống Nắng</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Dưỡng Ẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Bichup</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo Spa</a>
+                            </li>
+                            <li>
+                                <a href="#!">Whoo For Men</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="rotate4" hidden />
+                        <a href="#!">SU:M37° </a>
+                        <label for="rotate4" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 13"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Dưỡng Trắng Da</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Tái Tạo Năng Lượng</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Chống Lão Hoá</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Trang Điểm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 For Men</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Làm Sạch</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Đỏ</a>
+                            </li>
+                            <li>
+                                <a href="#!">Su:m37 Son</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="rotate5" hidden />
+                        <a href="#!">SULWHASOO</a>
+                        <label for="rotate5" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 12"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Trang Điểm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Chăm Sóc Da</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Làm Đẹp</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Chống Lão Hoá</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Dưỡng Ẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Chống Nắng</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo Spa</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sulwhasoo For Men</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="rotate6" hidden />
+                        <a href="#!">BỘ MỸ PHẨM </a>
+                        <label for="rotate6" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 11"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ </a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Ohui</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Ohui mini</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Whoo</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Whoo mini</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Su:m37</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Su:m37 mini</a>
+                            </li>
+                            <li>
+                                <a href="#!">Bộ Sulwhasoo</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="rotate7" hidden />
+                        <a href="#!">GÓI SAMPLE</a>
+                        <label for="rotate7" class="header__fixed-check">
+                            <div class="header__fixed-check-icon"></div>
+                        </label>
+                        <ul
+                            style="z-index: 10"
+                            class="header__navbar-left__menu-item"
+                        >
+                            <li>
+                                <a href="#!">Sản Phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#!">Gói Sale Ohui</a>
+                            </li>
+                            <li>
+                                <a href="#!">Gói Sale Whoo</a>
+                            </li>
+                            <li>
+                                <a href="#!">Gói Sale Su:m37</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">HỒNG SÂM HÀN QUỐC</a></li>
+                    <li><a href="#!">THỰC PHẨM CHỨC NĂNG</a></li>
+                    <li><a href="#!">HERBALIFE</a></li>
+                    <li><a href="#!">ĐĂNG NHẬP</a></li>
+                </ul>
+                <span class="header__desc">
+                    MyPhamOhui.Com - Website bán hàng online mỹ phẩm Ohui chính
+                    hãng Hàn Quốc uy tín tại Việt Nam.
+                </span>
+            </div>
+            <label for="close" class="header__blur">
+                <div class="header__close center">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </label>
+        </header>
+
+        <!-- =========================== MAIN ============== -->
+        <main class="main">
+            <!-- ============= hero ================== -->
+            <article class="hero">
+                <figure class="hero__img">
+                    <img
+                        src="./assets/img/hero__img.jpg"
+                        alt="LG VINA COSMETICS"
+                    />
+                </figure>
+                <div class="content">
+                    <span class="hero__trade-mark">LG VINA COSMETICS</span>
+                    <em class="hero__trade-mark-desc">
+                        Tự hào thương hiệu đỉnh cao</em
+                    >
+                    <p class="hero__content">
+                        Thành lập năm 1997, LG VINA trân trọng từng năm tháng
+                        trôi qua, vì mỗi con số ấy đều đánh dấu một cột mốc quan
+                        trọng trên hành trình thực hiện sứ mệnh làm đẹp của
+                        mình. Thế nhưng năm 2018 này lại có một ý nghĩa đặc biệt
+                        hơn cả, vì năm nay chúng tôi tròn 20 tuổi. Có thể nói LG
+                        VINA tuổi 20 đang tràn đầy nguồn năng lượng thanh xuân
+                        để tiếp tục nhiệm vụ đem sắc đẹp đến với nhiều chị em
+                        phụ nữ hơn nữa. Qua bao nhiêu biến đổi của thời gian, LG
+                        VINA vẫn tự hào là công ty mỹ phẩm hàng đầu, vinh hạnh
+                        được phái đẹp tin tưởng lựa chọn các thương hiệu mỹ phẩm
+                        cao cấp như The history of Whoo, O HUI, Su:m 37º.
+                    </p>
+                    <h1 class="hero__title">
+                        MỸ PHẨM OHUI CHÍNH HÃNG HÀN QUỐC
+                    </h1>
+                    <span class="hero__title-desc">
+                        Mai Phương Ohui – Phân phối mỹ phẩm Ohui chính hãng Hàn
+                        Quốc tại Việt Nam, miễn phí giao hàng trên toàn quốc.
+                    </span>
+                    <figure class="hero__logo center">
+                        <a href="#!" class=""
+                            ><img
+                                src="./assets/img/hero__logo1.jpg"
+                                alt="logo1"
+                                class="hero__logo-img"
+                        /></a>
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/hero__logo2.jpg"
+                                alt="logo2"
+                                class="hero__logo-img"
+                        /></a>
+                        <a href="#!">
+                            <img
+                                src="./assets/img/hero__logo3.jpg"
+                                alt="logo3"
+                                class="hero__logo-img"
+                        /></a>
+                    </figure>
+                </div>
+            </article>
+            <!-- =============== product =============== -->
+            <article class="product">
+                <div class="content">
+                    <ul class="product__category center">
+                        <li>
+                            <a href="#!">
+                                <span class="product__active"
+                                    >Sản Phẩm Mới</span
+                                >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>Sản Phẩm Bán Chạy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>Sản Phẩm Khuyến Mãi</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="product__list">
+                        <div class="product__row">
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_01.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_02.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_03.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_04.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_05.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_07.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_03.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_04.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_05.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_07.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_02.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_03.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_06.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_05.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__col">
+                                <div class="product__col-img">
+                                    <a href="#!"
+                                        ><img
+                                            src="./assets/img/my_pham_06.jpg"
+                                            alt=""
+                                    /></a>
+                                    <div class="product__notification">
+                                        <a
+                                            href="#!"
+                                            class="product__notification-lock"
+                                        >
+                                            <i class="fa-solid fa-lock"></i>
+                                        </a>
+                                        <span
+                                            class="product__notification-phone"
+                                        >
+                                            09324442689
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product__col-content">
+                                    <span class="product__col-type"
+                                        >MỸ PHẨM OHUI</span
+                                    >
+                                    <p class="product__col-desc">
+                                        <a href="#!"
+                                            >Bộ Kem Dưỡng Ẩm Ohui Miracle
+                                            Moisture Special Set 6pcs – Tặng
+                                            Giấy Tẩy Trang Giúp Da Cấp Ẩm, Dưỡng
+                                            Da Trắng Hồng Mịn Màng</a
+                                        >
+                                    </p>
+                                    <div class="product__col-price">
+                                        <span class="product__col-price-cost">
+                                            4,950,000
+                                        </span>
+                                        <span
+                                            class="product__col-price-promotion"
+                                        >
+                                            3,000,000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ============== convince ============-->
+            <article class="convince">
+                <div class="content">
+                    <h3 class="convince__title">
+                        TẠI SAO BẠN NÊN CHỌN MAI PHƯƠNG OHUI ?
+                    </h3>
+                    <section class="convince__main center">
+                        <div class="convince__content">
+                            <div class="convince__row">
+                                <div class="convince__row-img">
+                                    <img
+                                        src="./assets/img/convince__icon1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="convince__row-info">
+                                    <h4 class="convince__row-question">
+                                        Tư vấn, hỗ trợ tận tình 24/7
+                                    </h4>
+                                    <p class="convince__row-answer">
+                                        Sứ mệnh của Mai Phương là giúp cho chị
+                                        em phụ nữ Việt Nam có quyền được sở hữu
+                                        một làn da săn chắc, khỏe mạnh và trắng
+                                        sáng. Việc lựa chọn đúng loại mỹ phẩm
+                                        phù hợp nhất với làn da là bước cực kỳ
+                                        quan trọng trong việc tiến tới cái đẹp.
+                                        Kết Quả có thể đa dạng tùy theo mỗi
+                                        người
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="convince__row">
+                                <div class="convince__row-img">
+                                    <img
+                                        src="./assets/img/convince__icon2.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="convince__row-info">
+                                    <h4 class="convince__row-question">
+                                        Cam kết hàng chính hãng
+                                    </h4>
+                                    <p class="convince__row-answer">
+                                        Mai Phương Ohui luôn đảm bảo chất lượng
+                                        hàng hóa 100% chính hãng và cam kết uy
+                                        tín bán hàng của mình trên từng sản phẩm
+                                        khi tới tay khách hàng.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="convince__row">
+                                <div class="convince__row-img">
+                                    <img
+                                        src="./assets/img/convince__icon3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="convince__row-info">
+                                    <h4 class="convince__row-question">
+                                        Miễn phí giao hàng toàn quốc
+                                    </h4>
+                                    <p class="convince__row-answer">
+                                        Dù mua bất kì sản phẩm nào từ shop mỹ
+                                        phẩm Mai Phương quý khách cũng đều được
+                                        miễn 100% phí vận chuyển.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="convince__img">
+                            <img
+                                src="./assets/img/convince__img.png"
+                                alt="TẠI SAO BẠN NÊN CHỌN MAI PHƯƠNG OHUI ?"
+                            />
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <!-- =============== review ============  -->
+            <article class="review">
+                <div class="content">
+                    <h3 class="review__title">
+                        KHÁCH HÀNG REVIEW VỀ MAI PHƯƠNG OHUI
+                    </h3>
+                    <section class="review__main center">
+                        <div class="review__col center">
+                            <div class="review__col-img">
+                                <img
+                                    src="./assets/img/review__avatar1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="review__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review__comment">
+                                “Tôi rất hài lòng với nhân viên tư vấn vì đã
+                                cùng Whoo chăm sóc cho làn da của tôi suốt 10
+                                năm qua”
+                            </p>
+                            <div class="review__name-address">
+                                <span class="review__name"
+                                    >Anh NGUYỄN TRỌNG TẤN</span
+                                >
+                                <span class="review__address">/ TP Hà Nội</span>
+                            </div>
+                        </div>
+
+                        <div class="review__col center">
+                            <div class="review__col-img">
+                                <img
+                                    src="./assets/img/review__avatar2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="review__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review__comment">
+                                Mỹ phẩm Whoo chinh phục được cả những khách hàng
+                                khó tính và cầu toàn như tôi!”
+                            </p>
+                            <div class="review__name-address">
+                                <span class="review__name"
+                                    >Chị NGUYỄN THỊ THU THỦY</span
+                                >
+                                <span class="review__address"> / TP Huế</span>
+                            </div>
+                        </div>
+
+                        <div class="review__col center">
+                            <div class="review__col-img">
+                                <img
+                                    src="./assets/img/review__avatar3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="review__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review__comment">
+                                “Tôi cảm nhận được những yếu tố độc đáo, riêng
+                                biệt mà chỉ Whoo mới có!”
+                            </p>
+                            <div class="review__name-address">
+                                <span class="review__name"
+                                    >Chị ĐÀO MINH CHI</span
+                                >
+                                <span class="review__address"
+                                    >/ TP Hồ Chí Minh</span
+                                >
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        <!-- =========== FOOTER ============ -->
+        <footer class="footer">
+            <div class="content">
+                <div class="footer__main">
+                    <!-- col1 -->
+                    <article class="footer__col">
+                        <h4 class="footer__col-title">
+                            Địa chỉ mua Ohui Whoo Su:m 37 chính hãng
+                        </h4>
+                        <p class="footer__col-sale">
+                            * Gọi số Hotline 0961.394.394 để chỉ đường và nhận
+                            ưu đãi khuyến mại nhé ạ!
+                        </p>
+                        <p class="footer__address">
+                            - A207, BT2B khu đô thị Mễ Trì Thượng - Phường Mễ
+                            Trì - Quận Nam Từ Liêm - Hà Nội (Ngõ 8 Đại Lộ Thăng
+                            Long)
+                        </p>
+                        <span class="footer__hotline"
+                            >Hotline: 0961.394.394</span
+                        >
+                        <span class="footer__mail">
+                            Mail: muamyphamohui@gmail.com
+                        </span>
+                    </article>
+
+                    <!-- col2 -->
+                    <article class="footer__col">
+                        <h4 class="footer__col-title">Thông tin bổ sung</h4>
+                        <ul class="footer__link">
+                            <li>
+                                <a href="#!">Về chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="#!">Tin tức</a>
+                            </li>
+                            <li>
+                                <a href="#!">Khuyến mại</a>
+                            </li>
+                            <li>
+                                <a href="#!">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="#!">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a href="#!">Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="#!">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- col3 -->
+                    <article class="footer__col">
+                        <h4 class="footer__col-title">Bài viết mới</h4>
+                        <ul class="footer__link">
+                            <li>
+                                <a href="#!">Hướng dẫn mua hàng & thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    >Mua mỹ phẩm Ohui Whoo Sum37 chính hãng ở
+                                    đâu uy tín giá tốt?</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    >Mỹ Phẩm Ohui Tưng Bừng Khuyến Mãi Nhân Dịp
+                                    Quốc Tế Phụ Nữ 8/3 Đẹp Xinh Cùng OHUI</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    >Liệu trình chăm sóc da mặt + Hút chì thải
+                                    độc da + Đắp mặt nạ Lộc nhung trẻ hóa làn da
+                                    tại Mai Phương Ohui</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!"
+                                    >Hướng dẫn làm trắng da với các sản phẩm
+                                    Ohui Extreme White</a
+                                >
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- col4 -->
+                    <article class="footer__col">
+                        <h4 class="footer__col-title">
+                            Kết nối với Mai Phương
+                        </h4>
+                        <ul class="footer__link">
+                            <li>
+                                <a href="#!">Facebook Fanpage</a>
+                            </li>
+                            <li>
+                                <a href="#!">Google Plus</a>
+                            </li>
+                            <li>
+                                <a href="#!">YouTube Channel</a>
+                            </li>
+                            <li>
+                                <a href="#!">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#!">Zalo</a>
+                            </li>
+                            <li>
+                                <a href="#!">Pinterest</a>
+                            </li>
+                        </ul>
+                        <a href="https://www.facebook.com/profile.php?id=100017966175479">
+                            <div class="footer__contact">
+                                <img src="./assets/img/footer__contact-background.jpg" class="footer__contact-img">
+        
+                                </img>
+                                   
+                                    <a href="https://www.facebook.com/profile.php?id=100017966175479" >
+                                        <img class="footer__logo" src="./favicon/android-icon-192x192.png" alt="">
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100017966175479" class="footer__contact-name">
+                                        NGUYỄN TRỌNG TẤN
+                                    </a>
+                                    <span class="footer__contact-follow">
+                                        1,999,569 người theo dõi
+                                    </span>
+                                    <a href="https://www.facebook.com/profile.php?id=100017966175479" class="footer__contact__link-page">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <span>Theo dõi Trang</span>
+                                    </a>
+                                    <a href="https://www.facebook.com/profile.php?id=100017966175479" class="footer__contact__share-page">
+                                        <i
+                                            class="fa-solid fa-share"
+                                            style="color: #1458bd"
+                                        ></i>
+                                        <span>Chia Sẻ</span>
+                                    </a>
+                                </div>
+                        </a>
+                       
+                    </article>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
