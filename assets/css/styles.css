@@ -11,7 +11,7 @@ html {
 body {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.6rem;
-    height: 10000px;
+    overflow-x: hidden;
 }
 
 /* ================= common ================ */
@@ -34,6 +34,7 @@ a {
     background-color: #262221;
     position: sticky;
     top: 0;
+    z-index: 50;
 }
 
 .header__info {
@@ -344,7 +345,7 @@ a {
 }
 .header__fixed-input input {
     outline: none;
-    width: 200px;
+    width: 230px;
     border-radius: 999px;
     padding: 10px 10px;
     padding-right: 15px;
@@ -681,7 +682,6 @@ a {
     padding: 10px 0;
     position: relative;
     margin-bottom: 10px;
-    z-index: -1;
 }
 .convince__title::after {
     content: "";
@@ -704,6 +704,7 @@ a {
 }
 .convince__img {
     width: 35%;
+    cursor: pointer;
 }
 .convince__img img {
     padding-left: 20px;
@@ -747,7 +748,6 @@ a {
     padding: 10px 0;
     position: relative;
     margin-bottom: 10px;
-    z-index: -1;
 }
 .review__title::after {
     content: "";
@@ -764,7 +764,6 @@ a {
     padding-top: 20px;
     padding-bottom: 60px;
     position: relative;
-    z-index: -1;
 }
 .review__main::after {
     content: "";
@@ -785,6 +784,12 @@ a {
     height: 125px;
     border-radius: 50%;
     margin-bottom: 15px;
+    transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+}
+.review__col-img img:hover {
+    box-shadow: 0 0 10px #333;
+    opacity: 0.9;
 }
 .review__stars {
     margin-bottom: 10px;
@@ -815,6 +820,9 @@ a {
 }
 
 /* ============== footer ================ */
+.footer {
+    padding-bottom: 30px;
+}
 .footer__main {
     padding: 30px 0 20px;
     display: flex;
@@ -822,6 +830,13 @@ a {
     font-size: 1.4rem;
     line-height: 2.5rem;
     flex-wrap: wrap;
+}
+.footer__main::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ebebeb;
 }
 .footer__col {
     width: calc((100% - 90px) / 4);
@@ -834,7 +849,6 @@ a {
     padding-bottom: 10px;
     position: relative;
     margin-bottom: 20px;
-    z-index: -1;
 }
 .footer__col-title::after {
     display: block;
@@ -872,6 +886,7 @@ a {
 .footer__contact {
     position: relative;
     display: block;
+    z-index: 0;
 }
 .footer__contact-img {
     width: 100%;
@@ -893,8 +908,12 @@ a {
     top: 10px;
     left: 10px;
     width: 50px;
-
     border: 2px solid #fff;
+    transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.footer__logo:hover {
+    box-shadow: 0 0 10px #333;
+    opacity: 0.8;
 }
 .footer__contact-name {
     font-size: 1.9rem;
@@ -918,4 +937,103 @@ a {
 }
 .footer__contact-follow:hover {
     color: green;
+}
+.footer__contact__link-page,
+.footer__contact__share-page {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.footer__contact__link-page:hover,
+.footer__contact__share-page:hover {
+    box-shadow: 0 0 10px #333;
+    opacity: 0.8;
+}
+.footer__contact__link-page {
+    left: 10px;
+    background-color: #c8c5c5;
+}
+.footer__contact__link-page > i {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: blue;
+    opacity: 0.8;
+}
+.footer__contact__share-page {
+    right: 10px;
+    background-color: #c9c8c8;
+}
+.footer__contact__share-page > i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer__confide {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--xam-color);
+    line-height: 2.5rem;
+    margin-bottom: 50px;
+}
+.footer__confide > strong {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #666;
+}
+
+.footer__copyright,
+.footer__row-end > span {
+    font-size: 1.3rem;
+    color: var(--xam-color);
+    line-height: 2.5rem;
+    font-weight: 300;
+}
+.footer__copyright > strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #666;
+}
+.footer__row-end-pay {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 3rem;
+    color: var(--xam-color);
+}
+
+/* fixed contact */
+.fixed-contact {
+    position: fixed;
+    margin-right: 20px;
+    bottom: 20px;
+    right: 0;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    z-index: 10;
+    background-color: #1e73be;
+    color: #fff;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.fixed-contact::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -19px;
+    right: 30%;
+    border: 10px solid transparent;
+    border-top-color: #1e73be;
+}
+.fixed-contact:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 15px #555;
+}
+.fixed-contact > strong {
+    font-size: 1.5rem;
+    font-weight: 700;
 }

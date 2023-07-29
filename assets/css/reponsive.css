@@ -1,7 +1,7 @@
 /* pc */
 @media (min-width: 1024px) {
     .content {
-        width: calc(100% - 135px * 2);
+        width: calc(100% - 120px * 2);
         max-width: 1280px;
         margin: 0 auto;
     }
@@ -33,6 +33,7 @@
     .header__fixed-input input {
         padding: 20px 20px;
         padding-right: 40px;
+        width: 260px;
     }
     .header__fixed-input input::placeholder {
         font-size: 1.3rem;
