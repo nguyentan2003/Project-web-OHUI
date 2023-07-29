@@ -705,6 +705,11 @@ a {
 .convince__img {
     width: 35%;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.convince__img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #333;
 }
 .convince__img img {
     padding-left: 20px;
@@ -721,6 +726,11 @@ a {
 .convince__row-img img {
     object-fit: cover;
     width: 120px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.convince__row-img img:hover {
+    border: 1px solid #555;
 }
 .convince__row-info {
     padding: 20px;
@@ -941,11 +951,15 @@ a {
 .footer__contact__link-page,
 .footer__contact__share-page {
     display: flex;
-    width: 40%;
     align-items: center;
     position: absolute;
     bottom: 20px;
+    padding-right: 10px;
     transition: opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.footer__contact__link-page > span,
+.footer__contact__share-page > span {
+    color: #222;
 }
 .footer__contact__link-page:hover,
 .footer__contact__share-page:hover {
@@ -966,6 +980,7 @@ a {
 .footer__contact__share-page {
     right: 10px;
     background-color: #c9c8c8;
+    padding-right: 30px;
 }
 .footer__contact__share-page > i {
     margin-right: 10px;
@@ -1003,7 +1018,9 @@ a {
     font-size: 3rem;
     color: var(--xam-color);
 }
-
+.footer__row-end-pay:hover {
+    opacity: 0.9;
+}
 /* fixed contact */
 .fixed-contact {
     position: fixed;
